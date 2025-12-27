@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة إنترنت الشبكة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="loginCard" class="card">
+            <h2>🔐 دخول الشبكة</h2>
+            <p>أدخل بيانات الكرت لتفعيل الإنترنت</p>
+            <input type="text" id="username" placeholder="اسم المستخدم (أو رقم الكرت)">
+            <input type="password" id="password" placeholder="كلمة السر">
+            <button onclick="login()">تفعيل الكرت 📶</button>
+        </div>
+
+        <div id="statusCard" class="card" style="display: none;">
+            <h2 id="welcomeMsg">🚀 أهلاً بك</h2>
+            <div class="balance-box">
+                <span>📊 رصيدك الحالي:</span>
+                <h1 id="balanceValue">500 MB</h1>
+            </div>
+            <p>الحالة: متصل أونلاين ✅</p>
+            
+            <hr>
+            
+            <div class="chat-section">
+                <p>📩 مراسلة الإدارة (بدون نت):</p>
+                <div id="messagesDisplay" class="messages-box"></div>
+                <textarea id="userMsg" placeholder="اكتب رسالتك هنا..."></textarea>
+                <button class="btn-send" onclick="sendMessage()">إرسال الرسالة ✉️</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
