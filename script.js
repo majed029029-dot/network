@@ -25,19 +25,5 @@ function login() {
     } else {
         alert("⚠️ بيانات الكرت غير صحيحة!");
     }
-}
-
-function sendMessage() {
-    let msg = document.getElementById("userMsg").value;
-    if (msg === "") return;
-
-    let box = document.getElementById("messagesDisplay");
-    let time = new Date().toLocaleTimeString();
     
-    // إضافة الرسالة للشاشة والكونسول
-    box.innerHTML += `<div><b>أنت:</b> ${msg} <small>(${time})</small></div>`;
-    console.log("💬 رسالة جديدة للإدارة: " + msg);
-    
-    document.getElementById("userMsg").value = "";
-    alert("تم الإرسال بنجاح ✅");
 }
